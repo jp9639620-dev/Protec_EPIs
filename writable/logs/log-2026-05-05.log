@@ -1,0 +1,24 @@
+CRITICAL - 2026-05-05 00:37:06 --> ParseError: syntax error, unexpected identifier "id", expecting "," or ";"
+[Method: GET, Route: equipamentopis]
+in APPPATH\Views\equipamentopis.php on line 35.
+ 1 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('equipamentopis', [], true)
+ 3 APPPATH\Controllers\Home.php(19): view('equipamentopis')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->equipamentopis()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-05 00:37:08 --> ParseError: syntax error, unexpected identifier "id", expecting "," or ";"
+[Method: GET, Route: equipamentopis]
+in APPPATH\Views\equipamentopis.php on line 35.
+ 1 SYSTEMPATH\View\View.php(241): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('equipamentopis', [], true)
+ 3 APPPATH\Controllers\Home.php(19): view('equipamentopis')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->equipamentopis()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

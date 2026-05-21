@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;  /* CENTRALIZA HORIZONTAL */
+  align-items: center;      /* CENTRALIZA VERTICAL */
+  background-image: linear-gradient(45deg, rgb(255, 255, 255), rgb(255, 255, 255));
+}
+
+
+.right{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b2b38fc;
+}
+
+form{
+  background-color:rgba(0, 0, 0, 0.6);
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+color: #ffffff;
+
+}
+
+ 
+  .epi{
+  color: #007bff;
+  }
+
+h1{
+  text-align: center;
+    margin-bottom: 30px;
+}
+
+.logo{
+  display: flex;
+  align-items: center; /* alinha verticalmente */
+  justify-content: center; /* centraliza no meio */
+  gap: 10px; /* espaço entre imagem e texto */
+}
+
+.logo img{
+  width: 80px; /* ajusta o tamanho */
+}
+
+input{
+  width: 90%;
+  padding: 10px;
+  margin: 15px 0;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 17px;
+}
+
+input[type=submit]{
+  background-color: #4000ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: 0.10s;
+}
+
+input[type=submit]:hover{
+  background-color: #0105ff;
+}
+
+.A{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+button{
+background-color: blue;
+border: none;
+padding: 15px;
+width: 50%;
+border-radius: 10px;
+color:white;
+font-size: 15px;
+}
+button:hover{
+background-color: rgb(30, 101, 255);
+cursor: pointer;
+}
+
+.senha{
+  position: relative;
+  width: 250px;
+}
+
+.senha input{
+  width: 100%;
+  padding: 10px;
+  padding-right: 40px; 
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.senha img{
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  cursor: pointer;
+}
+#icon{
+cursor: pointer;
+width: 20px;
+vertical-align: middle;
+
+}
+
+

@@ -1,0 +1,60 @@
+CRITICAL - 2026-05-20 23:12:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home/colaboradores.php"
+[Method: GET, Route: colaboradores]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(226): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home/colaboradores.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home/colaboradores', [], true)
+ 3 APPPATH\Controllers\Home.php(88): view('home/colaboradores')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->colaboradores()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-20 23:12:53 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home/colaboradores.php"
+[Method: GET, Route: colaboradores]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(226): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home/colaboradores.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home/colaboradores', [], true)
+ 3 APPPATH\Controllers\Home.php(88): view('home/colaboradores')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->colaboradores()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-20 23:13:52 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home/colaboradores.php"
+[Method: GET, Route: colaboradores]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(226): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home/colaboradores.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home/colaboradores', [], true)
+ 3 APPPATH\Controllers\Home.php(88): view('home/colaboradores')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->colaboradores()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-20 23:39:17 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home/colaboradores.php"
+[Method: GET, Route: colaboradores]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(226): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home/colaboradores.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home/colaboradores', [], true)
+ 3 APPPATH\Controllers\Home.php(88): view('home/colaboradores')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->colaboradores()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2026-05-20 23:48:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home/colaboradores.php"
+[Method: GET, Route: colaboradores]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(226): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home/colaboradores.php')
+ 2 SYSTEMPATH\Common.php(1250): CodeIgniter\View\View->render('home/colaboradores', [], true)
+ 3 APPPATH\Controllers\Home.php(88): view('home/colaboradores')
+ 4 SYSTEMPATH\CodeIgniter.php(951): App\Controllers\Home->colaboradores()
+ 5 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(417): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(64): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
