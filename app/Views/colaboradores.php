@@ -188,6 +188,126 @@
       color: #bdc3c7;
       margin-bottom: 15px;
     }
+
+    .modal-content.modal-colaborador {
+      border: none;
+      border-radius: 12px;
+      padding: 26px 30px 30px;
+      background: #f7f7f8;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+    }
+
+    .modal-colaborador .modal-header {
+      border-bottom: none;
+      padding: 0;
+      margin-bottom: 22px;
+      align-items: flex-start;
+    }
+
+    .modal-colaborador .modal-title {
+      font-size: 38px;
+      font-weight: 700;
+      color: #151f33;
+      letter-spacing: -0.4px;
+    }
+
+    .modal-colaborador .btn-close {
+      margin: 4px 0 0 auto;
+      font-size: 14px;
+      opacity: 0.7;
+    }
+
+    .modal-colaborador .modal-body {
+      padding: 0;
+    }
+
+    .colaborador-form-label {
+      font-size: 24px;
+      font-weight: 600;
+      color: #1e293b;
+      margin-bottom: 10px;
+    }
+
+    .colaborador-form-control {
+      height: 62px;
+      border-radius: 14px;
+      border: 1px solid #cfd5df;
+      background-color: #f8f9fa;
+      font-size: 30px;
+      color: #1e293b;
+      padding: 10px 18px;
+    }
+
+    .colaborador-form-control::placeholder {
+      color: #8b97a8;
+      font-size: 30px;
+    }
+
+    .colaborador-form-control:focus {
+      border-color: #f1be2b;
+      box-shadow: 0 0 0 0.2rem rgba(241, 190, 43, 0.18);
+      background-color: #ffffff;
+    }
+
+    .colaborador-modal-actions {
+      margin-top: 28px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .btn-colaborador-cancelar,
+    .btn-colaborador-cadastrar {
+      height: 62px;
+      border: none;
+      border-radius: 14px;
+      font-size: 34px;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+
+    .btn-colaborador-cancelar {
+      background-color: #d7dae0;
+      color: #111827;
+    }
+
+    .btn-colaborador-cancelar:hover {
+      background-color: #c8cdd6;
+    }
+
+    .btn-colaborador-cadastrar {
+      background-color: #ffcc00;
+      color: #111827;
+    }
+
+    .btn-colaborador-cadastrar:hover {
+      background-color: #f2bf00;
+    }
+
+    @media (max-width: 991px) {
+      .modal-colaborador .modal-title {
+        font-size: 32px;
+      }
+
+      .colaborador-form-label {
+        font-size: 20px;
+      }
+
+      .colaborador-form-control {
+        font-size: 22px;
+        height: 54px;
+      }
+
+      .colaborador-form-control::placeholder {
+        font-size: 22px;
+      }
+
+      .btn-colaborador-cancelar,
+      .btn-colaborador-cadastrar {
+        font-size: 24px;
+        height: 54px;
+      }
+    }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </head>
@@ -239,7 +359,7 @@
       <div class="table-container">
         <div class="table-header">
           <div class="table-title">Colaboradores Cadastrados</div>
-          <button class="btn-novo">
+          <button class="btn-novo" data-bs-toggle="modal" data-bs-target="#modalNovoColaborador">
             <i class="fas fa-plus"></i> Novo Colaborador
           </button>
         </div>
@@ -310,6 +430,49 @@
             </tbody>
           </table>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalNovoColaborador" tabindex="-1" aria-labelledby="modalNovoColaboradorLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content modal-colaborador">
+      <div class="modal-header">
+        <h2 class="modal-title" id="modalNovoColaboradorLabel">Novo Colaborador</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="nomeColaborador" class="form-label colaborador-form-label">Nome Completo *</label>
+            <input type="text" class="form-control colaborador-form-control" id="nomeColaborador">
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="cpfColaborador" class="form-label colaborador-form-label">CPF *</label>
+              <input type="text" class="form-control colaborador-form-control" id="cpfColaborador">
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="admissaoColaborador" class="form-label colaborador-form-label">Data de Admissão *</label>
+              <input type="text" class="form-control colaborador-form-control" id="admissaoColaborador" placeholder="DD/MM/AAAA">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="cargoColaborador" class="form-label colaborador-form-label">Cargo *</label>
+              <input type="text" class="form-control colaborador-form-control" id="cargoColaborador">
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="setorColaborador" class="form-label colaborador-form-label">Setor *</label>
+              <input type="text" class="form-control colaborador-form-control" id="setorColaborador">
+            </div>
+          </div>
+          <div class="colaborador-modal-actions">
+            <button type="button" class="btn btn-colaborador-cancelar" data-bs-dismiss="modal">Cancelar</button>
+            <button type="submit" class="btn btn-colaborador-cadastrar">Cadastrar</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
