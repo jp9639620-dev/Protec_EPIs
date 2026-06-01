@@ -1,20 +1,22 @@
-*{
+/* Página de login - reset */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+/* Fundo centralizado na tela */
+body {
   height: 100vh;
   display: flex;
-  justify-content: center;  /* CENTRALIZA HORIZONTAL */
-  align-items: center;      /* CENTRALIZA VERTICAL */
+  justify-content: center;
+  align-items: center;
   background-image: linear-gradient(135deg, #f4f7fb, #e8eef6);
 }
 
-
-.right{
+/* Área do formulário */
+.right {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -22,37 +24,40 @@ body{
   background-color: #dfe7f2;
 }
 
-form{
+/* Caixa escura do login */
+form {
   background-color: #1f2a44;
   padding: 50px;
   border-radius: 15px;
   box-shadow: 0 14px 32px rgba(15, 23, 42, 0.24);
   color: #ffffff;
-
 }
 
- 
-  .epi{
+/* Destaque da palavra EPI no título */
+.epi {
   color: #5ea6ff;
-  }
+}
 
-h1{
+/* Título do sistema */
+h1 {
   text-align: center;
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
-.logo{
+/* Logo com imagem e texto */
+.logo {
   display: flex;
-  align-items: center; /* alinha verticalmente */
-  justify-content: center; /* centraliza no meio */
-  gap: 10px; /* espaço entre imagem e texto */
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
-.logo img{
-  width: 80px; /* ajusta o tamanho */
+.logo img {
+  width: 80px;
 }
 
-input{
+/* Campos de texto e senha */
+input {
   width: 90%;
   padding: 10px;
   margin: 15px 0;
@@ -64,7 +69,8 @@ input{
   background-color: #f9fbff;
 }
 
-input[type=submit]{
+/* Botão enviar */
+input[type=submit] {
   background-color: #4000ff;
   color: white;
   border: none;
@@ -72,49 +78,56 @@ input[type=submit]{
   transition: 0.10s;
 }
 
-input[type=submit]:hover{
+input[type=submit]:hover {
   background-color: #0105ff;
 }
 
-.A{
+/* Linha com opções extras */
+.A {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-button{
-background-color: #2563eb;
-border: none;
-padding: 15px;
-width: 50%;
-border-radius: 10px;
-color:white;
-font-size: 15px;
-font-weight: 600;
-transition: background-color 0.2s ease, transform 0.1s ease;
-}
-button:hover{
-background-color: #1d4ed8;
-cursor: pointer;
-}
-button:active{
-transform: translateY(1px);
+
+/* Botão principal do login */
+button {
+  background-color: #2563eb;
+  border: none;
+  padding: 15px;
+  width: 50%;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  transition: background-color 0.2s ease, transform 0.1s ease;
 }
 
-.senha{
+button:hover {
+  background-color: #1d4ed8;
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+/* Campo de senha com ícone do olho */
+.senha {
   position: relative;
   width: 250px;
 }
 
-.senha input{
+.senha input {
   width: 100%;
   padding: 10px;
-  padding-right: 40px; 
+  padding-right: 40px;
   border-radius: 8px;
   border: 1px solid #c3cfdf;
   background-color: #f9fbff;
 }
 
-.senha img{
+/* Ícone para mostrar/ocultar senha */
+.senha img {
   position: absolute;
   right: 10px;
   top: 50%;
@@ -122,11 +135,9 @@ transform: translateY(1px);
   width: 20px;
   cursor: pointer;
 }
-#icon{
-cursor: pointer;
-width: 20px;
-vertical-align: middle;
 
+#icon {
+  cursor: pointer;
+  width: 20px;
+  vertical-align: middle;
 }
-
-

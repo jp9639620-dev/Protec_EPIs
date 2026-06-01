@@ -17,25 +17,7 @@
 
     
 <div class="d-flex">
-  <!-- Sidebar -->
-  <div class="sidebar" style="width: 250px;">
-    <div class="logo">
-      <img src="<?= base_url('public/imagem/EPI.png') ?>" alt="Logo protecEPI">
-      <span>ProtecEPI</span>
-    </div>
-    <div class="sidebar-item active">
-      <i class="fas fa-home"></i> Dashboard
-    </div>
-    <a href="<?= base_url('colaboradores') ?>" class="sidebar-item" style="text-decoration: none; color: inherit;">
-      <i class="fas fa-users"></i> Colaboradores
-    </a>
-    <div class="sidebar-item">
-      <i class="fas fa-shield-alt"></i> EPIs
-    </div>
-    <div class="sidebar-item">
-      <i class="fas fa-box"></i> Entregas
-    </div>
-  </div>
+  <?= view('partials/menu_lateral', ['paginaAtiva' => 'dashboard']) ?>
 
   <!-- Main Content -->
   <div class="flex-grow-1">
@@ -62,8 +44,8 @@
       <div class="row">
         <div class="col-md-3">
           <div class="stat-card yellow">
-            <div class="stat-icon">
-              <img src="<?= base_url('public/imagem/capacete.png') ?>" alt="Capacete" class="stat-icon-img">
+            <div class="stat-icon" title="EPIs Disponíveis">
+              <i class="fa-solid fa-shield-halved stat-icon-symbol" aria-hidden="true"></i>
             </div>
             <div class="stat-number"><?= $epis_disponiveis ?? 0 ?></div>
             <div class="stat-label">EPIs Disponíveis</div>
@@ -71,8 +53,8 @@
         </div>
         <div class="col-md-3">
           <div class="stat-card blue">
-            <div class="stat-icon">
-              <img src="<?= base_url('public/imagem/aberto.png') ?>" alt="Entregas" class="stat-icon-img">
+            <div class="stat-icon" title="Entregas Pendentes">
+              <i class="fa-solid fa-box-open stat-icon-symbol" aria-hidden="true"></i>
             </div>
             <div class="stat-number">5</div>
             <div class="stat-label">Entregas Pendentes</div>
@@ -80,8 +62,8 @@
         </div>
         <div class="col-md-3">
           <div class="stat-card red">
-            <div class="stat-icon">
-              <img src="<?= base_url('public/imagem/olho.png') ?>" alt="Olhando" class="stat-icon-img">
+            <div class="stat-icon" title="EPIs Vencidos">
+              <i class="fa-solid fa-triangle-exclamation stat-icon-symbol" aria-hidden="true"></i>
             </div>
             <div class="stat-number"><?= $epis_vencidos ?? 0 ?></div>
             <div class="stat-label">EPIs Vencidos</div>
@@ -89,8 +71,8 @@
         </div>
         <div class="col-md-3">
           <div class="stat-card blue">
-            <div class="stat-icon">
-              <img src="<?= base_url('public/imagem/EPIs.png') ?>" alt="Colaboradores" class="stat-icon-img">
+            <div class="stat-icon" title="Colaboradores">
+              <i class="fa-solid fa-users stat-icon-symbol" aria-hidden="true"></i>
             </div>
             <div class="stat-number"><?= $total_colaboradores ?? 0 ?></div>
             <div class="stat-label">Colaboradores</div>

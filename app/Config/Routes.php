@@ -20,7 +20,16 @@ $routes->post('home/principal', 'Home::principal');
 
 //Rota para a página de colaboradores
 $routes->get('colaboradores', 'Home::colaboradores');
+//$rost->post('colaboradores', 'Home::colaboradores');
 //$routes->post('colaboradores', 'Home::colaboradores');
+
+//$routes para a página epis 
+$routes->get('epis', 'Home::epis');
+//$rotes->post('epis', 'Home::epis');
+
+//$routes->post e get('Entrgas', 'HOME::Entrgas');
+//$rotes->post('entregas', 'Home::entregas');
+//$rotes->get('entregas', 'Home::entregas');
 
 
 $routes->get('home/erro', 'Home::erro_auth');

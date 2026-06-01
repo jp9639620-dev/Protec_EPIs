@@ -8,10 +8,10 @@ use App\Models\epiModel;
 
 class Home extends BaseController
 {
-    // Essa método abre a primeira página do Sistema
-    public function index(): string
+    // Redireciona direto para o dashboard (sem tela de login)
+    public function index()
     {
-        return view('equipamentopis');
+        return redirect()->to(base_url('home/principal'));
     }
 
     // Abre a página de autenticação
@@ -83,9 +83,18 @@ class Home extends BaseController
     }
 
    
-        public function colaboradores()
-        {
-            return view ('home/colaboradores');
-        }
-    
+    public function colaboradores()
+    {
+        return view('colaboradores');
     }
+
+    public function epis()
+    {
+        return view('EPIs');
+    }
+
+    public function entregas()
+    {
+        return view('entrgas');
+    }
+}   
