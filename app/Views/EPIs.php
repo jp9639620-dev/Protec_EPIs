@@ -82,7 +82,7 @@
           <input type="text" placeholder="Buscar por nome, CA ou descricao...">
         </div>
 
-        <div style="overflow-x:auto;">
+        <div class="table-scroll">
           <table class="table-epis">
             <thead>
               <tr>
@@ -211,5 +211,6 @@
     });
   }
 </script>
+<script src="<?= base_url('public/js/epis.js') ?>"></script>
 </body>
 </html>

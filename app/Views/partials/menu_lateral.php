@@ -13,7 +13,7 @@ $itensMenu = [
   <div class="sidebar-topo">
     <div class="sidebar-topo-marca">
       <i class="fa-solid fa-building" aria-hidden="true"></i>
-      <span>ProtecEPI</span>
+      <span>Protec_EPI</span>
     </div>
     <button type="button" class="sidebar-btn-recolher" id="btnRecolherMenu" aria-label="Abrir menu" aria-expanded="false">
       <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
@@ -38,6 +38,7 @@ $itensMenu = [
     if (!sidebar || !btn) return;
 
     const icone = btn.querySelector('i');
+    const storageKey = 'protecEpi.sidebar.recolhido';
 
     function menuEstaFechado() {
       return sidebar.classList.contains('sidebar--recolhido');
@@ -53,8 +54,19 @@ $itensMenu = [
       }
     }
 
+    // Ao entrar no site: fechado por padrão. Depois, mantém a escolha do usuário.
+    const estadoSalvo = localStorage.getItem(storageKey);
+    if (estadoSalvo === 'aberto') {
+      sidebar.classList.remove('sidebar--recolhido');
+    } else if (estadoSalvo === 'fechado') {
+      sidebar.classList.add('sidebar--recolhido');
+    } else {
+      sidebar.classList.add('sidebar--recolhido');
+    }
+
     btn.addEventListener('click', function () {
       sidebar.classList.toggle('sidebar--recolhido');
+      localStorage.setItem(storageKey, menuEstaFechado() ? 'fechado' : 'aberto');
       atualizarBotao();
     });
 

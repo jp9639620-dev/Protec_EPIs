@@ -407,3 +407,348 @@ textarea.epi-form-control {
     font-size: 16px;
   }
 }
+
+/* ========== FASE 1: PADRAO PROFISSIONAL (EPIS) ========== */
+.epis-header {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #fff;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 18px 22px;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.kpi-grid {
+  gap: 14px;
+}
+
+.kpi-card {
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  min-height: 120px;
+  padding: 20px;
+}
+
+.kpi-card h3 {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.kpi-card p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.kpi-success {
+  background: linear-gradient(135deg, #16a34a 0%, #15803d 100%);
+}
+
+.kpi-warning {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  color: #111827;
+}
+
+.kpi-danger {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+}
+
+.alert-vencidos {
+  border-radius: var(--radius-md);
+  border: 1px solid #fecaca;
+  border-left: 4px solid #dc2626;
+  background: #fef2f2;
+  box-shadow: var(--shadow-sm);
+}
+
+.alert-vencidos .alert-title-wrap {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.alert-vencidos .alert-message {
+  font-size: 14px;
+  margin-left: 30px;
+}
+
+.btn-alert-action,
+.btn-alert-close {
+  border-color: #fca5a5;
+}
+
+.btn-alert-action {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.table-wrap {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.table-head {
+  padding: 18px;
+}
+
+.table-head h2 {
+  font-size: 22px;
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+.btn-novo-epi {
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: 0 8px 18px rgba(29, 78, 216, 0.24);
+}
+
+.btn-novo-epi:hover {
+  background: var(--color-primary-strong);
+}
+
+.search-epis input {
+  height: 42px;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  background: var(--color-surface-soft);
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.search-epis input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 0.18rem rgba(29, 78, 216, 0.16);
+  outline: none;
+}
+
+.table-epis thead {
+  background: #f8fafc;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.table-epis th {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  color: #334155;
+  padding: 12px 14px;
+}
+
+.table-epis td {
+  padding: 12px 14px;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.table-epis tbody tr:nth-child(even) {
+  background: #fcfdff;
+}
+
+.table-epis tbody tr:hover {
+  background: #eff6ff;
+}
+
+.epi-name {
+  font-weight: 600;
+}
+
+.epi-desc {
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+
+.status-badge {
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.status-valido {
+  background: #16a34a;
+}
+
+.status-vencido {
+  background: #dc2626;
+}
+
+.actions-cell i {
+  margin-right: 10px;
+}
+
+.modal-content.modal-epi {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  padding: 16px;
+  box-shadow: var(--shadow-md);
+}
+
+.modal-epi .modal-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.epi-form-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 4px;
+}
+
+.epi-form-control {
+  border: 1px solid var(--color-border-strong);
+  border-radius: 10px;
+  background: var(--color-surface-soft);
+  font-size: 14px;
+  padding: 8px 12px;
+  min-height: 42px;
+}
+
+.epi-form-control::placeholder {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.epi-form-control:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 0.18rem rgba(29, 78, 216, 0.16);
+}
+
+.btn-epi-cancelar,
+.btn-epi-cadastrar {
+  min-height: 42px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn-epi-cancelar {
+  background: #e2e8f0;
+}
+
+.btn-epi-cadastrar {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn-epi-cadastrar:hover {
+  background: var(--color-primary-strong);
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+  .epis-header {
+    font-size: 24px;
+    padding: 14px 16px;
+  }
+
+  .table-head h2 {
+    font-size: 18px;
+  }
+}
+
+/* ========== AJUSTE VISUAL EXTRA (EPIs) ========== */
+.kpi-card {
+  align-items: flex-start;
+}
+
+.kpi-card h3 {
+  line-height: 1.05;
+}
+
+.kpi-card p {
+  margin-top: 6px;
+  line-height: 1.35;
+}
+
+.alert-controls {
+  gap: 10px;
+}
+
+.btn-alert-action,
+.btn-alert-close {
+  transition: all 0.2s ease;
+}
+
+.btn-alert-action:hover,
+.btn-alert-close:hover {
+  border-color: #f87171;
+  background: #fff7f7;
+}
+
+.table-epis td {
+  line-height: 1.35;
+}
+
+.actions-cell {
+  white-space: nowrap;
+}
+
+.actions-cell i {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.icon-edit {
+  background: #e0f2fe;
+  border-color: #bae6fd;
+}
+
+.icon-edit:hover {
+  background: #0369a1;
+  border-color: #0369a1;
+  color: #fff;
+}
+
+.icon-delete {
+  background: #fee2e2;
+  border-color: #fecaca;
+}
+
+.icon-delete:hover {
+  background: #b91c1c;
+  border-color: #b91c1c;
+  color: #fff;
+}
+
+#modalNovoEpi .modal-dialog {
+  max-width: 760px;
+}
+
+.epi-modal-actions {
+  margin-top: 16px;
+}
+
+@media (max-width: 992px) {
+  .kpi-card {
+    min-height: 96px;
+  }
+
+  .alert-vencidos .alert-message {
+    margin-left: 0;
+  }
+
+  .table-head {
+    padding: 14px;
+  }
+
+  #modalNovoEpi .modal-dialog {
+    max-width: 560px;
+  }
+}

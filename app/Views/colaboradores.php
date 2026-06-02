@@ -50,7 +50,7 @@
           <input type="text" placeholder="Buscar por nome, CPF ou cargo...">
         </div>
 
-        <div style="overflow-x: auto;">
+        <div class="table-scroll">
           <table>
             <thead>
               <tr>
@@ -117,7 +117,7 @@
 </div>
 
 <div class="modal fade" id="modalNovoColaborador" tabindex="-1" aria-labelledby="modalNovoColaboradorLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl">
+  <div class="modal-dialog modal-dialog-centered modal-colaborador-dialog">
     <div class="modal-content modal-colaborador">
       <div class="modal-header">
         <h2 class="modal-title" id="modalNovoColaboradorLabel">Novo Colaborador</h2>
@@ -158,6 +158,9 @@
     </div>
   </div>
 </div>
+
+<script src="<?= base_url('public/js/cpf-mask.js') ?>"></script>
+<script src="<?= base_url('public/js/colaborador.js') ?>"></script>
 
 </body>
 </html>

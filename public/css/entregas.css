@@ -1,0 +1,349 @@
+/* ========== PÁGINA ENTREGAS ========== */
+
+.entregas-header {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #fff;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 18px 22px;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.entregas-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.entregas-kpi-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.entregas-kpi-card strong {
+  font-size: 28px;
+  color: var(--color-text);
+  line-height: 1.1;
+}
+
+.entregas-kpi-card span {
+  font-size: 14px;
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+.entregas-kpi-card.kpi-total strong {
+  color: var(--color-primary);
+}
+
+.entregas-kpi-card.kpi-mes strong {
+  color: var(--color-success);
+}
+
+.entregas-kpi-card.kpi-pendente strong {
+  color: #b45309;
+}
+
+.table-container-entregas {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: 20px;
+}
+
+.entregas-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.entregas-table-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.btn-nova-entrega {
+  background: var(--color-primary);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 8px 18px rgba(31, 77, 184, 0.24);
+  transition: all 0.2s ease;
+}
+
+.btn-nova-entrega:hover {
+  background: var(--color-primary-strong);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.search-entregas {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.search-entregas i {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+}
+
+.search-entregas input {
+  width: 100%;
+  padding: 10px 14px 10px 38px;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  font-size: 14px;
+  color: var(--color-text);
+  background: var(--color-surface-soft);
+}
+
+.search-entregas input:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 0.18rem rgba(31, 77, 184, 0.16);
+  background: var(--color-surface);
+}
+
+.table-entregas {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-entregas thead {
+  background: #f8fafc;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.table-entregas th {
+  padding: 12px 14px;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: #334155;
+}
+
+.table-entregas td {
+  padding: 12px 14px;
+  font-size: 14px;
+  color: var(--color-text);
+  border-bottom: 1px solid #edf2f7;
+  vertical-align: middle;
+}
+
+.table-entregas tbody tr:nth-child(even) {
+  background: #fcfdff;
+}
+
+.table-entregas tbody tr:hover {
+  background: #eff6ff;
+}
+
+.td-colaborador {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.td-epi {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.td-data {
+  color: #475569;
+  white-space: nowrap;
+}
+
+.td-responsavel {
+  color: var(--color-text-muted);
+}
+
+.td-actions-entrega {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.btn-action-entrega {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  margin: 0 4px;
+  transition: all 0.2s ease;
+}
+
+.btn-action-entrega.btn-edit {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.btn-action-entrega.btn-edit:hover {
+  background: #0369a1;
+  color: #fff;
+}
+
+.btn-action-entrega.btn-delete {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.btn-action-entrega.btn-delete:hover {
+  background: #b91c1c;
+  color: #fff;
+}
+
+.badge-entrega-status {
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.badge-concluida {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.badge-pendente {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+/* Modal nova entrega */
+.modal-entrega-dialog {
+  max-width: 760px;
+}
+
+.modal-content.modal-entrega {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  padding: 16px;
+  box-shadow: var(--shadow-md);
+}
+
+.modal-entrega .modal-header {
+  border-bottom: none;
+  padding: 0;
+  margin-bottom: 14px;
+}
+
+.modal-entrega .modal-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.modal-entrega .modal-body {
+  padding: 0;
+}
+
+.entrega-form-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 4px;
+}
+
+.entrega-form-control {
+  height: 42px;
+  border: 1px solid var(--color-border-strong);
+  border-radius: 10px;
+  background: var(--color-surface-soft);
+  font-size: 14px;
+  color: var(--color-text);
+  padding: 8px 12px;
+}
+
+.entrega-form-control:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 0.18rem rgba(31, 77, 184, 0.16);
+  background: var(--color-surface);
+}
+
+.entrega-modal-actions {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.btn-entrega-cancelar,
+.btn-entrega-cadastrar {
+  height: 42px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn-entrega-cancelar {
+  background: #e2e8f0;
+  color: #111827;
+}
+
+.btn-entrega-cancelar:hover {
+  background: #cbd5e1;
+}
+
+.btn-entrega-cadastrar {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.btn-entrega-cadastrar:hover {
+  background: var(--color-primary-strong);
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .entregas-header {
+    font-size: 24px;
+    padding: 14px 16px;
+  }
+
+  .entregas-kpi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .table-container-entregas {
+    padding: 14px;
+  }
+
+  .entregas-table-title {
+    font-size: 18px;
+  }
+
+  .modal-entrega-dialog {
+    max-width: 560px;
+  }
+}

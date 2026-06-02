@@ -95,6 +95,6 @@ class Home extends BaseController
 
     public function entregas()
     {
-        return view('entrgas');
+        return view('entregas');
     }
 }   
