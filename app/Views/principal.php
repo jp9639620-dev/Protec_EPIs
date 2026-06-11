@@ -27,9 +27,11 @@
         <i class="fas fa-bell"></i>
       </div>
       <div>
-        <span class="badge bg-warning text-dark">PS</span>
-        <strong> Usuario</strong><br>
-        <small>Técnico de Segurança</small>
+        <button>
+        <span class="badge bg-warning text-dark">MS</span>
+        <strong>Maria Santos</strong><br>
+        <small class="nome-usuario">Administrador</small>
+</button>
       </div>
     </div>
 

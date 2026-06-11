@@ -6,7 +6,8 @@ $itensMenu = [
     ['id' => 'colaboradores', 'numero' => '2', 'titulo' => 'Colaboradores', 'icone' => 'fa-users', 'url' => base_url('colaboradores')],
     ['id' => 'epis', 'numero' => '3', 'titulo' => 'EPIs', 'icone' => 'fa-shield-halved', 'url' => base_url('epis')],
     ['id' => 'entregas', 'numero' => '4', 'titulo' => 'entregas', 'icone' => 'fa-box', 'url' => base_url('entregas')],                               
-];
+    ['id'=> 'usuario', 'numero' => '5', 'titulo' => 'usuario', 'icone' => '', 'url' => base_url('usuario')],
+  ];
 ?>
 
 <aside class="sidebar sidebar--recolhido" id="sidebarMenu">
